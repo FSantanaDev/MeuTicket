@@ -27,7 +27,7 @@ urlpatterns = [
        
  
     path('gerar_pdf/', views.gerar_pdf, name='gerar_pdf'),
-    
+    path('run-migrations/', run_migrations, name='run-migrations'),
     
 ]
 
