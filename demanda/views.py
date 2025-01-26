@@ -33,6 +33,8 @@ from django.template.loader import render_to_string
 #from xhtml2pdf import pisa
 from urllib.parse import urlencode  # Import para construir query strings
 import os
+from demanda.management_views import run_migrations
+
 
 
 
