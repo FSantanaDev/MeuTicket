@@ -153,15 +153,19 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Caminho onde os arquivos estáticos serão coletados
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
-# Define onde os arquivos estáticos estarão armazenados no projeto
+# Diretórios onde o Django procura arquivos estáticos durante o desenvolvimento
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Pasta global "static" no projeto
+    os.path.join(BASE_DIR, 'static'),
 ]
-MEDIA_URL = '/media/'
 
-MEDIA_ROOT = BASE_DIR / 'media'
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 
