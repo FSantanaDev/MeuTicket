@@ -6,6 +6,8 @@ from . import views  # Supondo que todas as views estejam no mesmo módulo `view
 from django.conf.urls.static import static
 from django.conf import settings
 from demanda.management_views import run_migrations
+from demanda.management_user import create_superuser
+
 
 
 urlpatterns = [
