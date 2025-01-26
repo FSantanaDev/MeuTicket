@@ -5,6 +5,7 @@ from django.urls import path
 from . import views  # Supondo que todas as views estejam no mesmo módulo `views`
 from django.conf.urls.static import static
 from django.conf import settings
+from demanda.management_views import run_migrations
 
 
 urlpatterns = [
