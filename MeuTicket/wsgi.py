@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
 
 import os
 import django
-
+from django.contrib.auth import get_user_model
 from django.core.wsgi import get_wsgi_application
 
 
