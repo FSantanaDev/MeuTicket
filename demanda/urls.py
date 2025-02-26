@@ -23,6 +23,7 @@ urlpatterns = [
     path('dashboard-suporte/', views.dashboard_suporte, name='dashboard_suporte'),
     path('demanda/<int:demanda_id>/iniciar_atendimento/', views.iniciar_atendimento, name='iniciar_atendimento'),
     path('demanda/<int:demanda_id>/reabrir/', views.reabrir_demanda, name='reabrir_demanda'),
+ 
 
     # URLs do relatório
     path('relatorio/', views.relatorio, name='relatorio'),  # Página principal do relatório

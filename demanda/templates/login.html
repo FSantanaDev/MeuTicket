@@ -26,7 +26,7 @@
                 {% endfor %}
             </div>
         {% endif %}
-
+      
         <!-- Logo do sistema -->
         <div class="logo">
             <img src="{% static 'img/MeuTicket.png' %}" alt="Logo do sistema">
@@ -36,12 +36,14 @@
         <form method="POST" action="{% url 'login' %}">
             {% csrf_token %}
             <!-- Campo de usuário/CPF -->
+            <h4>Para login use: visitante@meuticket.com</h4>
             <div class="input-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
             </div>
 
             <!-- Campo de senha -->
+            <h4>Senha: 123456</h4>
             <div class="input-group">
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="password" required>
